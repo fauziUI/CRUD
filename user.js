@@ -1,91 +1,25 @@
-import Axios from 'axios'
-import { API_URL } from '../../constants/API'
-
-export const registerUser = ({ fullName, username, email, password }) => {
-    return (dispatch) => {
-        Axios.post(`${API_URL}/user`,{
-            fullName,
-            username,
-            email,
-            password,
-            role: "user"
-        })
-        .then((result)=>{
-            localStorage.setItem("userDataEmmerce",JSON.stringify(result.data))
-            dispatch({
-                type: "USER_LOGIN",
-                payload: result.data
-            })
-            alert ('berhasil menambah user')
-        })
-    }
-    
+const init_state = {
+    username: "",
+    fullname:"",
+    email:"",
+    role:"",
+    id:0,
+    errMsg:"",
+    storageIsChecked: false
 }
-
-export const loginUser = ({ username, password }) => {
-    return (dispatch)=>{
-        Axios.get(`${API_URL}/user`,{
-            params: {
-                username,
-            }
-        })
-        .then((result)=>{
-            console.log(result.data)
-            if(result.data.length){
-                if (password===result.data[0].password){
-                    delete result.data[0].password
-
-                    localStorage.setItem("userDataEmmerce",JSON.stringify(result.data[0]))
-
-                    dispatch({
-                        type: "USER_LOGIN",
-                        payload: result.data[0]
-                        }) 
-                } else {
-                    dispatch({
-                        type: "USER_ERROR",
-                        payload: "Wrong password"
-                    })
-                }
-            } else {
-                dispatch({
-                    type: "USER_ERROR",
-                    payload: "User not found"
-                })
-            }
-        })
+const reducer = (state = init_state , action) =>{
+    switch (action.type){
+        case "USER_LOGIN":
+            return {...state,...action.payload, storageIsChecked: true}
+        case "USER_ERROR":
+            return {...state, errMsg: action.payload}
+        case "USER_LOGOUT":
+            return {...init_state, storageIsChecked: true}
+        case "CHECK_STORAGE":
+            return {...state, storageIsChecked: true}
+        default:
+            return state;
     }
 }
 
-export const logoutUser = ()=>{
-    localStorage.removeItem("userDataEmmerce")
-    return {
-        type: "USER_LOGOUT"
-    }
-}
-
-export const userKeepLogin = (userData) => {
-    return (dispatch) => {
-        Axios.get(`${API_URL}/user`,{
-            params: {
-                id : userData.id
-            }
-        })
-        .then ((result)=>{
-            delete result.data[0].password
-
-            localStorage.setItem("userDataEmmerce",JSON.stringify(result.data[0]))
-
-            dispatch({
-                type: "USER_LOGIN",
-                payload: result.data[0] 
-                })
-        })
-    }
-}
-
-export const checkStorage = ()=>{
-    return {
-        type: "CHECK_STORAGE"
-    }
-}
+export default reducer
