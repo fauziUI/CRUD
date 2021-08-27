@@ -1,0 +1,132 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "productName": "Kaos React JS Navy",
+      "price": 95000,
+      "productImage": "https://images.tokopedia.net/img/cache/500-square/VqbcmM/2020/10/19/220e0ee1-f546-4899-a64c-dd2c92b0f0a8.jpg.webp",
+      "modal": 90000,
+      "stock": 9
+    },
+    {
+      "id": 2,
+      "productName": "Kaos Bootstrap Navy",
+      "price": 82000,
+      "productImage": "https://cf.shopee.co.id/file/e102da4f3c12ec040629162b67ec98f5",
+      "modal": 77000,
+      "stock": 8
+    },
+    {
+      "id": 3,
+      "productName": "Kaos html script hitam",
+      "price": 75000,
+      "productImage": "https://id-test-11.slatic.net/p/ede0814b2e302dd2268c3b5acb8fba5c.jpg_720x720q80.jpg_.webp",
+      "modal": 70000,
+      "stock": 7
+    },
+    {
+      "id": 4,
+      "productName": "kaos front end merah",
+      "price": 100000,
+      "productImage": "https://cf.shopee.co.id/file/1cceeb54d6fc0ef02e7510b92806ea84",
+      "modal": 95000,
+      "stock": 5
+    },
+    {
+      "id": 5,
+      "productName": "kaos CSS hitam",
+      "price": 70000,
+      "productImage": "https://cf.shopee.co.id/file/3ddc75007b06cf4efdc43f61284ee731",
+      "modal": 65000,
+      "stock": 9
+    },
+    {
+      "id": 6,
+      "productName": "kaos Web Developer Biru",
+      "price": 90000,
+      "productImage": "https://ciptaloka-mockups.s3.amazonaws.com/design/ap4nvgjzgq-29-0-1--m.jpg",
+      "modal": 80000,
+      "stock": 15
+    },
+    {
+      "id": 7,
+      "productName": "kaos JS Developer Hitam",
+      "price": 75000,
+      "productImage": "https://id-test-11.slatic.net/p/db8c9e68e51b89f2550c679f51ea4953.jpg",
+      "modal": 67000,
+      "stock": 9
+    },
+    {
+      "id": 8,
+      "productName": "kaos Designer vs Developer Putih",
+      "price": 90000,
+      "productImage": "https://ciptaloka-mockups.s3.amazonaws.com/design/bn48wy5547-18-0-1--l.jpg",
+      "modal": 87000,
+      "stock": 1
+    },
+    {
+      "id": 9,
+      "productName": "Celana Bahan Hitam Formal",
+      "price": 99000,
+      "productImage": "https://cf.shopee.co.id/file/ada208b67a26194dcac203ae4b285c41",
+      "modal": 93000,
+      "stock": 13
+    },
+    {
+      "id": 10,
+      "productName": "Celana Bahan Hitam Casual",
+      "price": 120000,
+      "productImage": "https://id-test-11.slatic.net/p/f35214d1f3dbefc0d0a9b15142ed0a95.jpg_720x720q80.jpg_.webp",
+      "modal": 100000,
+      "stock": 12
+    },
+    {
+      "id": 11,
+      "productName": "Celana Bahan Abu-Abu Casual",
+      "price": 95000,
+      "productImage": "https://images.tokopedia.net/img/cache/700/product-1/2019/7/30/72120681/72120681_4e87c6f2-fc92-4e8e-8827-b8044967bd60_891_891",
+      "modal": 89000,
+      "stock": 11
+    },
+    {
+      "id": 12,
+      "productName": "Celana Bahan Abu-Abu Formal",
+      "price": 93000,
+      "productImage": "https://ik.imagekit.io/fzn/tr:n-auto85/image/cache/data/Baju-Pria/2019/december/celana-bahan-formal-panjang-slimfit-abu-terang-wb-700x700.jpg",
+      "modal": 90000,
+      "stock": 20
+    },
+    {
+      "productName": "Celana Pendek Abri",
+      "price": 95000,
+      "productImage": "https://id-test-11.slatic.net/p/0091bb829a008ef9f8968b1293dc94dd.jpg_720x720q80.jpg_.webp",
+      "modal": 90000,
+      "stock": 10,
+      "id": 13
+    },
+    {
+      "productName": "Topi Hitam Casual",
+      "price": 83000,
+      "productImage": "https://cdn1-production-images-kly.akamaized.net/hb6DqxqU_NBXJ_lYTmDYjuRmyVI=/640x480/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/2754021/original/029823500_1552891993-foto_HL_topi.jpg",
+      "modal": 78000,
+      "stock": 7,
+      "id": 14
+    },
+    {
+      "productName": "Kaca Mata Hitam",
+      "price": 50000,
+      "productImage": "https://cf.shopee.co.id/file/0d308e9f1474fd267195da482fb13fca",
+      "modal": 45000,
+      "stock": 11,
+      "id": 15
+    },
+    {
+      "productName": "tas ransel hitam",
+      "price": 150000,
+      "productImage": "https://images.tokopedia.net/img/cache/500-square/product-1/2019/11/16/81974973/81974973_c18dbc68-e6aa-4836-8005-854e834fb83c_1500_1500.webp",
+      "modal": 100000,
+      "stock": 15,
+      "id": 16
+    }
+  ]
+}
